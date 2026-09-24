@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollReveal from "./components/ScrollReveal";
 import React from "react";
 function App() {
   return (
@@ -15,15 +16,25 @@ function App() {
       <main>
         <Hero />
 
-        <About />
+        <ScrollReveal>
+          <About />
+        </ScrollReveal>
 
-        <Experience />
+        <ScrollReveal delay={80}>
+          <Experience />
+        </ScrollReveal>
 
-        <Projects />
+        <ScrollReveal delay={120}>
+          <Projects />
+        </ScrollReveal>
 
-        <Skills />
+        <ScrollReveal delay={160}>
+          <Skills />
+        </ScrollReveal>
 
-        <Contact />
+        <ScrollReveal delay={200}>
+          <Contact />
+        </ScrollReveal>
       </main>
 
       <Footer />
